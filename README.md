@@ -20,7 +20,7 @@ simple explaining configuring the webpack config file while going from simplicit
 	 	"dev": "NODE_ENV=development webpack",
 	 	"prod": "NODE_ENV=production webpack"
 	 },
-	 ```
+```
 
 @(additionaly) try running them to see that webpack emits main.js to dist folder(run dev) and browser window opens(run start) 
 
