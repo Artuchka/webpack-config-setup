@@ -5,10 +5,10 @@ simple explaining configuring the webpack config file while going from simplicit
 @initialize the project:
 	npm init -y
 @install libraries:
-	npm i --save-dev webpack webpack-cli
-	npm i --save-dev html-webpack-plugin mini-css-extract-plugin
-	npm i --save-dev style-loader css-loader postcss postcss-loader postcss-preset-env sass sass-loader
-	npm i --save-dev webpack-dev-server
+	*npm i --save-dev webpack webpack-cli
+	*npm i --save-dev html-webpack-plugin mini-css-extract-plugin
+	*npm i --save-dev style-loader css-loader postcss postcss-loader postcss-preset-env sass sass-loader
+	* npm i --save-dev webpack-dev-server
 
 
 1. SETTING UP ENTRY js FILE
