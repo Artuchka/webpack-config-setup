@@ -14,11 +14,11 @@ simple explaining configuring the webpack config file while going from simplicit
 1. SETTING UP ENTRY js FILE
 - => create src/index.js
 - => add scripts to package.json:
-	- "scripts": {
-		"start": "NODE_ENV=development webpack server --open",
-		"dev": "NODE_ENV=development webpack",
-		"prod": "NODE_ENV=production webpack"
-	},
+	> "scripts": {
+	> 	"start": "NODE_ENV=development webpack server --open",
+	> 	"dev": "NODE_ENV=development webpack",
+	> 	"prod": "NODE_ENV=production webpack"
+	> },
 
 @(additionaly) try running them to see that webpack emits main.js to dist folder(run dev) and browser window opens(run start) 
 
@@ -28,7 +28,7 @@ simple explaining configuring the webpack config file while going from simplicit
 - => create webpack.config.js
 - => setup mode setting in config file
 - => setup `html-webpack-plugin` in config file (in plugins array + template property)
-	- const HtmlWebpackPlugin = require('html-webpack-plugin')
+	>  const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 @YOU HAVE AUTO ADDING JS TO HTML
 
@@ -43,14 +43,14 @@ simple explaining configuring the webpack config file while going from simplicit
 @let's set up extracting css for `production` mode:
 
 - => add
-	- const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+	>  const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 	+ to plugins
 - => change 
-	- `style-loader` 
-	- to 
-	- mode === "production"
-						- ? MiniCssExtractPlugin.loader
-						- : "style-loader",
+	>  `style-loader` 
+	>  to 
+	>  mode === "production"
+						>  ? MiniCssExtractPlugin.loader
+						>  : "style-loader",
 
 @woalua, you have separated css file and now it's linked directly in html output file!
 
@@ -68,18 +68,18 @@ simple explaining configuring the webpack config file while going from simplicit
 4. SETTING UP IMAGES (which are from css) FOLDER(assets) 
 - => add ./src/img/any-image-name.png or any extension out there
 - => add rule to specify the type of image files (so they will be treated as assets)
-	>{	
+	> {	
 	>	test: /\.(png|jpeg|jpg|svg|gif)$/i,
 	>	type: "asset/resource",
-	>},
+	> },
 - => add `output` to module.exports in config 
-	>output: {
+	> output: {
 	>	assetModuleFilename: "assets/[name][ext][query]",
-	>},
+	> },
 
 - 5. CLEAN OUTPUT FOLDER BEFORE BUNDLING
 - => add to `output`
-		>clean: true,
+		> clean: true,
 
 
 
