@@ -98,7 +98,7 @@ to
 	},
 ```
 
-- 5. CLEAN OUTPUT FOLDER BEFORE BUNDLING
+5. CLEAN OUTPUT FOLDER BEFORE BUNDLING
 - => add to `output`
 ```
 	clean: true,
