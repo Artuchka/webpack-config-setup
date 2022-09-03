@@ -15,10 +15,10 @@ simple explaining configuring the webpack config file while going from simplicit
 - => create src/index.js
 - => add scripts to package.json:
 	> "scripts": {
-	> 	"start": "NODE_ENV=development webpack server --open",
-	> 	"dev": "NODE_ENV=development webpack",
-	> 	"prod": "NODE_ENV=production webpack"
-	> },
+	- 	"start": "NODE_ENV=development webpack server --open",
+	- 	"dev": "NODE_ENV=development webpack",
+	- 	"prod": "NODE_ENV=production webpack"
+	- },
 
 @(additionaly) try running them to see that webpack emits main.js to dist folder(run dev) and browser window opens(run start) 
 
