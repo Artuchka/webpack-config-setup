@@ -2,9 +2,9 @@
 simple explaining configuring the webpack config file while going from simplicity towards complexity
 
 
-0.1 initialize the project:
+0. initialize the project:
 	* npm init -y
-0.2 install libraries:
+0. install libraries:
 	* npm i --save-dev webpack webpack-cli
 	* npm i --save-dev html-webpack-plugin mini-css-extract-plugin
 	* npm i --save-dev style-loader css-loader postcss postcss-loader postcss-preset-env sass sass-loader
