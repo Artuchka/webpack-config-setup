@@ -14,7 +14,7 @@ simple explaining configuring the webpack config file while going from simplicit
 1. SETTING UP ENTRY js FILE
 - => create src/index.js
 - => add scripts to package.json:
-	-- "scripts": {
+	- "scripts": {
 		"start": "NODE_ENV=development webpack server --open",
 		"dev": "NODE_ENV=development webpack",
 		"prod": "NODE_ENV=production webpack"
