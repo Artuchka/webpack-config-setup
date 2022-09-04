@@ -82,13 +82,16 @@ to
 - @woalua, you have sass support
 
 
-4. SETTING UP IMAGES (which are from css) FOLDER(assets) 
+5. SETTING UP IMAGES (which are from css) FOLDER(assets) 
 - => add ./src/img/any-image-name.png or any extension out there
 - => add rule to specify the type of image files (so they will be treated as assets)
 ``` 
 	{	
 		test: /\.(png|jpeg|jpg|svg|gif)$/i,
 		type: "asset/resource",
+		generator: {
+			filename: "images/[hash][ext][query]",
+		},
 	},
  ```
 - => add `output` to module.exports in config 
@@ -98,12 +101,15 @@ to
 	},
 ```
 
-5. CLEAN OUTPUT FOLDER BEFORE BUNDLING
+6. CLEAN OUTPUT FOLDER BEFORE BUNDLING
 - => add to `output`
 ```
 	clean: true,
 ```
 
+
+7. SETTING UP IMAGES (which are from html) FOLDER(assets) 
+- => add html-loader
 
 
 
